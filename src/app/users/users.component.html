@@ -1,9 +1,12 @@
 <div  class="container" *ngIf="devs?.length>0; else noDevelopers">
 <h2>Developers</h2>
+<a href="https://devamplify.com" target="_blank">
+  Click to Join
+</a>
 <ul *ngFor="let dev of devs">
-  <li><strong>{{dev.id}}: </strong>{{dev.twitter}}</li>
+  <li><strong>{{dev.name}}: </strong>{{dev.twitter}}</li>
 </ul>
-
+ 
 </div>
 <ng-template #noDevelopers>
   <hr>
