@@ -8,6 +8,12 @@ import { Dev } from '../models/dev';
   styleUrls: ['./add-dev.component.scss']
 })
 export class AddDevComponent implements OnInit {
+  dev: Dev = {
+    name: '',
+    twitter: '',
+    github: '',
+    stack: ''
+  }
 
   constructor(private devService: DevService) { }
 
