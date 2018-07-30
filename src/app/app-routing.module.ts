@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '',
     component: UsersComponent
   },
-  qwwe
+  qww
   {
     path: 'posts',
     component: PostsComponent
