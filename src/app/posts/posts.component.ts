@@ -14,7 +14,8 @@ export class PostsComponent implements OnInit {
 
   ngOnInit() {
     this.eventsService.getEvents().subscribe(events => {
-      console.log(events);
+      //console.log(events);
+      this.events = events;
     });
   }
 
