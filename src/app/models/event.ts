@@ -1,6 +1,8 @@
-export interface Dev {
-    name?:string;
-    twitter?:string;
-    github?:string;
-    stack?:string;
+export interface Event {
+    title?:string;
+    picture?:string;
+    date?:string;
+    location?:string;
+    info?:string;
+    organizers?:string;
   }
