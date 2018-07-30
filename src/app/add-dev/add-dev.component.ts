@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DevService } from '../services/dev.service';
-import {  }
+import { Dev } from '../models/dev';
 
 @Component({
   selector: 'app-add-dev',
