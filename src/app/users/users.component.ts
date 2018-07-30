@@ -14,8 +14,7 @@ import { Dev } from '../models/dev';
   //         style({ opacity: 0, transform: 'translateY(-35px)' }),
   //         stagger('50ms', 
 
- 
- 
+  
 })
 export class UsersComponent implements OnInit {
   devs: Dev[];
