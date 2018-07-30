@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import { Observable } from 'rxjs';
 import { EventsService } from '.././services/events.service';
+import {}
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
