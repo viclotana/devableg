@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import { Observable } from 'rxjs';
 import { EventsService } from '.././services/events.service';
-import {}
+import { Event } from '../models/event';
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
@@ -10,7 +10,7 @@ import {}
 export class PostsComponent implements OnInit {
   events: Event[];
 
-  constructor() { }
+  constructor(private eventsService: EventsService) { }
 
   ngOnInit() {
 
