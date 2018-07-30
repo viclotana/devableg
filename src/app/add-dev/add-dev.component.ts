@@ -9,7 +9,7 @@ import { Dev } from '../models/dev';
 })
 export class AddDevComponent implements OnInit {
 
-  constructor() { }
+  constructor(private devService: DevService) { }
 
   ngOnInit() {
   }
