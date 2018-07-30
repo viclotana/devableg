@@ -1,6 +1,6 @@
 <div  class="container" *ngIf="devs?.length>0; else noDevelopers">
   <h2>Meetups</h2>
-  <ul *ngFor="let dev of devs">
+  <ul *ngFor="let event of events">
     <li><strong>{{event.title}}: </strong>{{event.location}}
     <p>{{event.info}}</p>
     </li>
