@@ -1,20 +1,20 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from
 'angularfire2/firestore';
-import { Dev } from '../models/Dev';
+import { Event } from '../models/event';
 import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class EventsService {
-   devCollection: AngularFirestoreCollection<Dev>;
-   devs: Observable<Dev[]>;
+   eventCollection: AngularFirestoreCollection<Event>;
+   events: Observable<Event[]>;
 
   constructor(public lax: AngularFirestore) { 
-    this.devs = this.lax.collection('events').valueChanges();
+    this.events = this.lax.collection('events').valueChanges();
   }
 
-  getDevelopers(){
-    return this.devs;
+  getEvents(){
+    return this.events;
   }
 }
