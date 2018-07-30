@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '',
     component: UsersComponent
   },
-  {
+  
   {
     path: 'posts',
     component: PostsComponent
