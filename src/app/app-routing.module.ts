@@ -9,7 +9,6 @@ const routes: Routes = [
     component: UsersComponent
   },
   {
-
   {
     path: 'posts',
     component: PostsComponent
