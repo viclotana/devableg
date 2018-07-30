@@ -1,1 +1,11 @@
-<h1>Meetups</h1>
+<div  class="container" *ngIf="devs?.length>0; else noDevelopers">
+  <h1>Developers</h1>
+  <ul *ngFor="let dev of devs">
+    <li><strong>{{dev.name}}: </strong>{{dev.twitter}}</li>
+  </ul>
+  
+  </div>
+  <ng-template #noDevelopers>
+    <hr>
+    <h5>There are no Developers to List</h5>
+  </ng-template>
