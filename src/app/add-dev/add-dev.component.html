@@ -8,7 +8,7 @@
         <label for="name">Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" [(ngModel)]="dev.name" id="fname" name="name" placeholder="Your name..">
       </div>
     </div>
     <div class="row">
@@ -16,7 +16,7 @@
         <label for="lname">Twitter Handle</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="@">
+        <input type="text" [(ngModel)]="dev.twitter" id="lname" name="twitter" placeholder="@">
       </div>
     </div>
     <div class="row">
