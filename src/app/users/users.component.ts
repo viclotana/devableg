@@ -15,7 +15,7 @@ import { Dev } from '../models/dev';
   //         stagger('50ms', 
   //         animate('550ms ease-out',
   //       style({ opacity: 1, transform: 'translateY(0px)'})))
-  //       ], {optional: true}),
+
  
 })
 export class UsersComponent implements OnInit {
