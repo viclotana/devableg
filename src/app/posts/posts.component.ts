@@ -13,7 +13,7 @@ export class PostsComponent implements OnInit {
   constructor(private eventsService: EventsService) { }
 
   ngOnInit() {
-
+    this.eventsService.getEvents()
   }
 
 }
