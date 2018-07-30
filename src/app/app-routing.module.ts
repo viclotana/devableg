@@ -10,7 +10,6 @@ const routes: Routes = [
   },
   {
     path: 'details/:id',
-  
   {
     path: 'posts',
     component: PostsComponent
