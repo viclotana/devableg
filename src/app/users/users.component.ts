@@ -5,8 +5,7 @@ import { Dev } from '../models/dev';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.scss'],
-
+  styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit {
   devs: Dev[];
