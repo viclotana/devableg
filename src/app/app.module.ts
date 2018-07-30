@@ -16,7 +16,6 @@ import { UsersComponent } from './users/users.component';
     AppComponent,
     SidebarComponent,
     PostsComponent,
-    DetailsComponent,
     UsersComponent
   ],
   imports: [
