@@ -1,8 +1,9 @@
 <div  class="container" *ngIf="events?.length>0; else noEvents">
-  <h2>Meetups</h2>
+  <h2>Events</h2>
   <ul *ngFor="let event of events">
     <li><strong>{{event.title}}: </strong>{{event.location}}
     <p>{{event.info}}</p>
+    <strong><i>Organizers: </i></strong>{{event.organizers}}
     </li>
   </ul>
   
