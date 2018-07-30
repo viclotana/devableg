@@ -23,6 +23,7 @@ import { AddDevComponent } from './add-dev/add-dev.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase, 'devableg'),
     AngularFirestoreModule,
     AppRoutingModule
