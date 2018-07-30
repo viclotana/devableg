@@ -3,6 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument 
 'angularfire2/firestore';
 import { Dev } from '../models/Dev';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
@@ -11,7 +12,14 @@ export class DevService {
    devs: Observable<Dev[]>;
 
   constructor(public lax: AngularFirestore) { 
-    this.devs = this.lax.collection('developers').valueChanges();
+    // this.devs = this.lax.collection('developers').valueChanges();
+    this.devs = this.lax.collection('developers').snapshotChanges().pipe(map(changes => {
+      return changes.map(a => {
+        const data = a.payload.doc.data() as Dev;
+        data.id = a.payload.doc.id;
+        return data;
+      });
+    }));
   }
 
   getDevelopers(){
