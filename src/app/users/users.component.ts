@@ -6,12 +6,7 @@ import { Dev } from '../models/dev';
   selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss'],
-  // animations: [
-  //   trigger('listStagger', [
-  //     transition('* <=> *', [
-  //       query(':enter', 
-  //       [
-  //         style({ opacity: 0, transform: 'translateY(-35px)' }), 
+
 })
 export class UsersComponent implements OnInit {
   devs: Dev[];
