@@ -10,8 +10,8 @@ export class EventsService {
    eventCollection: AngularFirestoreCollection<Event>;
    events: Observable<Event[]>;
 
-  constructor(public lax: AngularFirestore) { 
-    this.events = this.lax.collection('events').valueChanges();
+  constructor(public tax: AngularFirestore) { 
+    this.events = this.tax.collection('events').valueChanges();
   }
 
   getEvents(){
