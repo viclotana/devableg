@@ -11,8 +11,7 @@ import { Dev } from '../models/dev';
   //     transition('* <=> *', [
   //       query(':enter', 
   //       [
-  //         style({ opacity: 0, transform: 'translateY(-35px)' }),
-  //         stagger('50ms',  
+  //         style({ opacity: 0, transform: 'translateY(-35px)' }), 
 })
 export class UsersComponent implements OnInit {
   devs: Dev[];
