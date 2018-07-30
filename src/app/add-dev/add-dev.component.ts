@@ -20,4 +20,15 @@ export class AddDevComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit(){
+    if(this.dev.name != '' && this.dev.github != '' && this.dev.stack != '' ){
+      this.devService.addDeveloper(this.dev);
+      this.dev.name = '';
+      this.dev.github = '';
+      this.dev.twitter = '';
+      this.dev.stack = '';
+
+    }
+  }
+
 }

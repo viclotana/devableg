@@ -13,7 +13,8 @@ export class DevService {
 
   constructor(public lax: AngularFirestore) { 
     // this.devs = this.lax.collection('developers').valueChanges();
-    this.devs = this.lax.collection('developers').snapshotChanges().pipe(map(changes => {
+    this.devCollection = this.lax.collection('developers');
+    this.devs = this.devCollection.snapshotChanges().pipe(map(changes => {
       return changes.map(a => {
         const data = a.payload.doc.data() as Dev;
         data.id = a.payload.doc.id;
@@ -24,6 +25,10 @@ export class DevService {
 
   getDevelopers(){
     return this.devs;
+  }
+
+  addDeveloper(dev: Dev){
+    this.devCollection.add(dev);
   }
 }
 
